@@ -1,8 +1,8 @@
 # 任务清单统计
 
-一个极简、离线的原生 Android 任务清单。记录目标，也允许如实记录失败。
+一个极简、离线的原生 Android 任务清单。记录目标完成与失败。
 
-黑色背景、深灰任务卡片、黄色添加按钮。没有登录、联网、标签、打卡或复杂图表。
+黑色背景、深灰任务卡片、黄色添加按钮。
 
 ## 功能
 
@@ -16,12 +16,6 @@
 
 前往 [Releases](https://github.com/18824595784y-cyber/Nailong114514/releases) 下载 APK，传到手机后点击安装，按系统提示允许文件管理器安装未知应用。需要 Android 8.0 或更高版本。
 
-**旧测试版用户请注意：** 正式发布密钥与此前调试密钥不同，正式版不能直接覆盖调试版。请先保留旧应用与数据，不要为安装而直接卸载。当前应用没有数据导出或迁移功能。
-
-## 界面截图
-
-真实界面截图待补充。应用采用黑灰配色、白色文字与黄色圆形加号；待办位于上方，累计统计与折叠历史位于下方。
-
 ## 本地编译
 
 使用 JDK 17、Android SDK 34，推荐在 Android Studio 中打开项目并等待 Gradle 同步完成。
@@ -34,7 +28,7 @@ Windows PowerShell：
 
 输出：`app/build/outputs/apk/debug/app-debug.apk`。
 
-项目使用 Gradle Wrapper 8.7、Android Gradle Plugin 8.5.2、Kotlin 1.9.24、Jetpack Compose Material 3 和 Room 2.6.1。无需修改系统 Gradle 版本。
+项目使用 Gradle Wrapper 8.7、Android Gradle Plugin 8.5.2、Kotlin 1.9.24、Jetpack Compose Material 3 和 Room 2.6.1。
 
 公开发布构建：
 
@@ -42,7 +36,7 @@ Windows PowerShell：
 .\gradlew.bat assembleRelease
 ```
 
-签名通过环境变量 `TODO_KEYSTORE`、`TODO_STORE_PASSWORD`、`TODO_KEY_ALIAS`、`TODO_KEY_PASSWORD` 注入。未配置时只会生成未签名 Release；发布前必须验证签名。请自行安全保管密钥，切勿提交私钥和密码。
+签名通过环境变量 `TODO_KEYSTORE`、`TODO_STORE_PASSWORD`、`TODO_KEY_ALIAS`、`TODO_KEY_PASSWORD` 注入。
 
 ## 版本说明
 
